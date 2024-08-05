@@ -1,0 +1,41 @@
+@charset "UTF-8";
+@import "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css";
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  text-align: center; 
+}
+
+footer {
+  bottom: 0; 
+  width: 100%; 
+  padding: 1rem; 
+  text-align: center; 
+}
+
+.password-container {
+  position: relative; 
+  display: flex;
+  align-items: center; 
+}
+
+#password {
+  padding-right: 40px; 
+}
+
+#togglePassword {
+  position: absolute; 
+  right: 10px; 
+  top: 40%; 
+  transform: translateY(-50%); 
+  cursor: pointer; 
+  font-size: 24px; 
+  color: #333; 
+}
+
+#togglePassword.disabled {
+  color: #aaa; 
+  cursor: not-allowed; 
+}

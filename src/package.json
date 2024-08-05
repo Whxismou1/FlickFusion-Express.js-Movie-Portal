@@ -1,0 +1,42 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "FlickFusion: Multimedia web",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "build": "sass ../public/assets/css/index.scss ../public/assets/css/index.css && sass ../public/assets/css/footer/footer.scss ../public/assets/css/footer/footer.css && sass ../public/assets/css/miPerfil/miPerfil.scss ../public/assets/css/miPerfil/miPerfil.css && sass ../public/assets/css/showinfo/showinfo.scss ../public/assets/css/showinfo/showinfo.css && sass ../public/assets/css/privacy/privacy.scss ../public/assets/css/privacy/privacy.css",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULE-Informatica-2023-2024/aw-final-1c-g09.git"
+  },
+  "author": "G09 (Javier Troyano|Carolina Macho|Christian Casado|Oscar Diez|Mouhcine El Oualidi)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ULE-Informatica-2023-2024/aw-final-1c-g09/issues"
+  },
+  "homepage": "https://github.com/ULE-Informatica-2023-2024/aw-final-1c-g09#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "chart.js": "^4.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "googleapis": "^137.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.13",
+    "nodemon": "^3.1.0",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "path": "^0.12.7",
+    "stripe": "^15.8.0"
+  }
+}

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css";
+footer {
+  bottom: 0;
+  width: 100%; 
+  padding: 1rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-placeholder {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#movie-image {
+  max-width: 40%;
+  max-height: 40%;
+  justify-content: center;
+}
+
+.title {
+  display: inline;
+}
+
+h1 {
+  text-align: center;
+}
+
+/*# sourceMappingURL=showinfo.css.map */

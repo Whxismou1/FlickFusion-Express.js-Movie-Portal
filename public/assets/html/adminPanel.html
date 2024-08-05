@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administracion - FlickFusion</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"> -->
+    <link rel="stylesheet" href="assets/css/footer/footer.css">
+    <script src="/assets/js/adminPanel.js" defer type="module"></script>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="container-fluid">
+    <header>
+        <nav>
+
+            <ul>
+                <li>
+                    <figure>
+                        <img src="assets/img/Logo-FlickFusionResized.jpg" alt="Logo de FlickFusión">
+                    </figure>
+                </li>
+                <li>
+                    <h1>FlickFusion</h1>
+                </li>
+            </ul>
+            <ul>
+                <li><button class="outline secondary" id="log-out-button">Cerrar sesión</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="filtered-search">
+            <h2>Usuarios</h2>
+            <form name="users-search" role="search">
+                <input type="search" name="usersbar" placeholder="Introduce un usuario">
+                <input class="outline secondary" type="submit" value="buscar">
+            </form>
+            <article class="usuarios" id="usuarios-table">
+
+                <!--Generar aqui a los distintos usuarios-->
+            </article>
+            <p id="result-text"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 FlickFusion. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

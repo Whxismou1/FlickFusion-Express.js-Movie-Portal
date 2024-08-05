@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@import "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css";
+footer {
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, .privacy {
+  text-align: center;
+}
+
+/*# sourceMappingURL=privacy.css.map */

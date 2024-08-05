@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi perfil - FlickFusion</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"> -->
+    <link rel="stylesheet" href="/assets/css/miPerfil/miPerfil.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <script src="/assets/js/miPerfil.js" type="module" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="bg-aqua">
+
+
+
+        <nav>
+            <ul>
+                <li><img src="assets/img/Logo-FlickFusionResized.jpg" alt="Logo" class="logo"></li>
+                <li>
+                    <a href="/paginaPrincipal">
+                        <h1>FlickFusion</h1>
+                    </a>
+                </li>
+            </ul>
+
+
+            <ul class="flex">
+                <li><a href="explorar">Explorar</a></li>
+                <li><a href="https://www.rtve.es/play/videos/directo/" target="_blank">TV Direct</a></li>
+                <li><a href="#"><img style="width: 45px; " id="user-profile-img" src=""></a>
+                <li><a href="cesta"><img src="assets/img/cesta.png" alt="Icono cesta"></a>
+                </li>
+                <li><button class="outline secondary" id="log-out-button">Cerrar sesión</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="bg-blueviolet">
+        <section>
+            <h2>Mi perfil</h2>
+            <figure class="mb-2">
+                <!-- <img src="assets/img/iconUser.png" id="img-logo-user" alt="Logo de usuario" style="height: 50px;"> -->
+                <img id="img-logo-user" alt="Logo de usuario" style="height: 50px;">
+                <button id="multiedit-pfp" class="outline secondary"></button>
+            </figure>
+
+            <article class="mt-2">
+                <p>Usuario: <span id="usernameplace"></span></p>
+                <p>Email: <span id="emailplace"></span></p>
+            </article>
+
+            <article id="fields-art-pass">
+                <button id="change-password-button" class="outline secondary">Cambiar contraseña</button>
+                <br>
+                <br>
+                <div id="password-change-fields" style="display: none;">
+                    <div class="input-container">
+                        <input type="password" id="current-password" placeholder="Contraseña actual">
+                        <i id="togglePassword1" class="fa fa-eye-slash toggle-password" style="font-size:24px"></i>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" id="new-password" placeholder="Nueva contraseña">
+                        <i id="togglePassword2" class="fa fa-eye-slash toggle-password" style="font-size:24px"></i>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" id="confirm-password" placeholder="Confirmar nueva contraseña">
+                        <i id="togglePassword3" class="fa fa-eye-slash toggle-password" style="font-size:24px"></i>
+                    </div>
+                    <button id="submit-password-change" class="outline secondary">Cambiar</button>
+                    <div id="status-update-password"></div>
+                </div>
+            </article>
+
+
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="aboutUs">Acerca de</a></li>
+                <li><a href="FAQ">FAQ</a></li>
+                <li><a href="termsOfUse">Términos de Uso</a></li>
+                <li><a href="privacyPolicy">Politica de Privacidad</a></li>
+                <li><a href="mailto:atmmanagerbot@gmail.com">Contáctanos</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 FlickFusion. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
